@@ -43,7 +43,6 @@ body {
   flex-direction: column;
   margin-bottom: 15px;
   justify-content: center;
-  font-family: "Pacifico", cursive;
   padding: 5px;
   border-radius: 30px;
   background: linear-gradient(315deg, #d2b7b7, #b09a9a);
@@ -219,6 +218,11 @@ h2 i {
   text-align: left; /* Ensure text is aligned to the left */
   vertical-align: top; /* Align content to the top */
   overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.task-input:focus {
+  outline: none;
+  border: 2px solid #3b2a20;
 }
 
 .task .checkbox-input {
