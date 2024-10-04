@@ -132,18 +132,32 @@ h2 i {
   justify-content: space-between;
   padding: 10px;
   word-wrap: break-word; /* Breaks long words to avoid overflow */
-  overflow-y: auto; /* Ensures text does not overflow */
+  overflow-y: scroll; /* Ensures text does not overflow */
   white-space: normal; /* Allows text to wrap to the next line */
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  text-align: left; /* Ensure text is aligned to the left */
+  vertical-align: top; /* Align content to the top */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
 }
 
 .task .checkbox-input {
-  width: 40%;
+  width: 75%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+
+.task .checkbox-input input {
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.task .checkbox-input label {
+  margin-left: 25px;
+  font-size: 0.8rem;
 }
 
 .strikethrough {
