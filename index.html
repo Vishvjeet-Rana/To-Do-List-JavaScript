@@ -40,7 +40,14 @@
 
           <!-- the todo items -->
           <div class="task">
-            <p>nrgj gdbgjsd gdsgbsd</p>
+            <div class="checkbox-input">
+              <input
+                type="checkbox"
+                id="task1"
+                onclick="toggleStrikethrough(this)"
+              />
+              <label for="task1">Task 1</label>
+            </div>
             <button class="dlt-button">
               <i class="fa-solid fa-trash"></i>
             </button>
@@ -48,5 +55,7 @@
         </div>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>

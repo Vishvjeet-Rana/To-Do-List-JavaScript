@@ -133,6 +133,18 @@ h2 i {
   padding: 10px;
 }
 
+.task .checkbox-input {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
 .task .dlt-button {
   margin-right: 20px;
   border: none;
