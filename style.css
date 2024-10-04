@@ -32,7 +32,7 @@ body {
   width: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding: 40px;
 }
 
@@ -41,16 +41,63 @@ body {
   width: 80%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
   justify-content: center;
+  font-family: "Pacifico", cursive;
   padding: 5px;
   border-radius: 30px;
   background: linear-gradient(315deg, #d2b7b7, #b09a9a);
   box-shadow: -7px -7px 14px #4e4444, 7px 7px 14px #e4bbbb;
 }
 
+.owner h3,
+h5 {
+  color: #3b2a20;
+  margin-left: 15px;
+}
+
 .about-us {
-  height: 60%;
+  height: 40%;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+  border-radius: 30px;
+  background: linear-gradient(315deg, #d2b7b7, #b09a9a);
+  box-shadow: -7px -7px 14px #4e4444, 7px 7px 14px #e4bbbb;
+}
+
+.about-us-text {
+  margin-top: 20px;
+  color: #3b2a20;
+}
+
+.aggreagation-contact-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  height: 40px;
+  width: 80%;
+  /* border: 2px solid black; */
+}
+
+.contact-icons i {
+  color: #3b2a20;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #c4abab;
+  box-shadow: inset 5px 5px 10px #998585, inset -5px -5px 10px #e4bbbb;
+}
+
+.contact-icons a {
+  text-decoration: none;
 }
 
 .todo-part {
@@ -77,14 +124,17 @@ body {
 h2,
 h6 {
   margin-top: 5px;
+  color: #3b2a20;
 }
 
 h6 {
   margin-left: 30px;
+  color: #3b2a20;
 }
 
 h2 i {
   margin-right: 10px;
+  color: #3b2a20;
 }
 
 .todo-items {
