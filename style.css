@@ -28,12 +28,41 @@ body {
 }
 
 .side-section-inner {
-  height: 60%;
+  height: 80%;
   width: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 40px;
+}
+
+.tools-used {
+  height: 40%;
+  width: 80%;
+  margin-top: 20px;
+  color: #3b2a20;
+  border-radius: 30px;
+  background: linear-gradient(315deg, #d2b7b7, #b09a9a);
+  box-shadow: -7px -7px 14px #4e4444, 7px 7px 14px #e4bbbb;
+}
+
+.tool-heading {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.tools-used a {
+  text-decoration: #3b2a20 underline;
+  color: #3b2a20;
+  font-weight: 550;
 }
 
 .owner {
