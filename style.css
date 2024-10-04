@@ -19,7 +19,7 @@ body {
 }
 
 .side-section {
-  height: 80%;
+  height: 95%;
   width: 30%;
   margin-top: 15px;
   border-radius: 34px;
@@ -73,4 +73,76 @@ h2 i {
 .headings,
 .side-section {
   margin-top: 10px;
+}
+
+/* add todo items div */
+.add-todo {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: sticky;
+  z-index: 20;
+  /* background: linear-gradient(145deg, #b09a9a, #d2b7b7);
+  box-shadow: 5px 5px 16px #6e6464, -5px -5px 16px #e4bbbb; */
+}
+
+.add-todo input {
+  margin-left: 20px;
+  height: 27px;
+  width: 60%;
+  background-color: #c4abab;
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  background: #c4abab;
+  box-shadow: inset 5px 5px 10px #7d6d6d, inset -5px -5px 10px #e4bbbb;
+}
+
+.add-todo .add-button {
+  margin-right: 20px;
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #c4abab;
+  box-shadow: inset 5px 5px 10px #998585, inset -5px -5px 10px #e4bbbb;
+}
+
+.add-todo .add-button i {
+  color: darkgreen;
+}
+
+.task {
+  height: 10%;
+  width: 90%;
+  margin: auto;
+  font-weight: 500;
+  margin-top: 15px;
+  border-radius: 55px;
+  background: linear-gradient(315deg, #d2b7b7, #b09a9a);
+  box-shadow: -10px -10px 23px #706161, 10px 10px 23px #e4bbbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.task .dlt-button {
+  margin-right: 20px;
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #c4abab;
+  box-shadow: inset 5px 5px 10px #998585, inset -5px -5px 10px #e4bbbb;
+}
+
+.dlt-button i {
+  color: red;
 }
