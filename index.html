@@ -32,29 +32,34 @@
         <div class="todo-items">
           <!-- adding todo items -->
           <div class="add-todo">
-            <input type="text" placeholder="Add your task" />
+            <input type="text" placeholder="Add your task" class="task-input" />
             <button class="add-button">
               <i class="fa-solid fa-circle-plus"></i>
             </button>
           </div>
 
           <!-- the todo items -->
-          <div class="task">
+          <!-- <div class="task">
             <div class="checkbox-input">
               <input
+                class="checkboxinput"
                 type="checkbox"
                 id="task1"
                 onclick="toggleStrikethrough(this)"
               />
-              <label for="task1">have to do the morning walk at 4am</label>
+              <label class="labelClass" for="task1"
+                >This todo task was set by default.</label
+              >
             </div>
             <button class="dlt-button">
               <i class="fa-solid fa-trash"></i>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+
+    <div class="popup" id="popup">Please enter a task!</div>
 
     <script src="app.js"></script>
   </body>
