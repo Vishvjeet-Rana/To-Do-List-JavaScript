@@ -131,6 +131,11 @@ h2 i {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  word-wrap: break-word; /* Breaks long words to avoid overflow */
+  overflow-y: auto; /* Ensures text does not overflow */
+  white-space: normal; /* Allows text to wrap to the next line */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .task .checkbox-input {
