@@ -2,6 +2,7 @@ const taskInput = document.querySelector(".task-input");
 const addBtn = document.querySelector(".add-button");
 const todoItemArea = document.querySelector(".todo-items");
 
+// pop-up message
 function showPopup(message) {
   popup.textContent = message; // Set the message text
   popup.style.display = "block"; // Show the popup
@@ -25,6 +26,7 @@ function addTask() {
     return;
   }
 
+  // the div which shows our task after adding it
   const taskDiv = document.createElement("div");
   taskDiv.classList.add("task");
 
@@ -57,6 +59,7 @@ function addTask() {
 
   todoItemArea.appendChild(taskDiv);
 
+  // after clearning making it ready for next todo's entry
   taskInput.value = "";
 
   // dlt button listener
@@ -73,6 +76,7 @@ function addTask() {
 // add button listener
 addBtn.addEventListener("click", addTask);
 
+// optional : tasks will be added after pressing the Enter key
 taskInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     addTask();
