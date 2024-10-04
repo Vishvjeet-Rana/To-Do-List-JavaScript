@@ -59,6 +59,7 @@ h6 {
 
 h2 i {
   margin-right: 10px;
+  color: linear-gradient(to right, #d2b48c, #8b4513, #ffa07a, #ff4500);
 }
 
 .todo-items {
@@ -151,8 +152,8 @@ h2 i {
 
 .task .checkbox-input input {
   margin-left: 10px;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
 
 .task .checkbox-input label {
