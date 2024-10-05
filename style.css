@@ -309,9 +309,9 @@ h2 i {
   transition: opacity 0.5s ease;
 }
 
-@keyframes dltButtonAnimation {
+@keyframes addButtonAnimation {
   0% {
-    transform: scale(1.5);
+    transform: scale(2);
   }
   50% {
     transform: rotateX(180deg);
@@ -321,12 +321,15 @@ h2 i {
   }
 }
 
-.animation {
-  position: relative;
-  height: 300px;
-  width: 500px;
-  margin: auto;
-  background-color: pink;
-  margin-bottom: 50px;
-  animation: dltButtonAnimation 0.8s ease 0.5s 1 normal;
+@keyframes dltButtonAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2) rotateZ(360deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotateZ(0deg);
+  }
 }

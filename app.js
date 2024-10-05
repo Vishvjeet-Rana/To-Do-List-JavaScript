@@ -28,6 +28,7 @@ function addTask() {
 
   // the div which shows our task after adding it
   const taskDiv = document.createElement("div");
+
   taskDiv.classList.add("task");
 
   // the div which contains checkbox and label
@@ -62,9 +63,15 @@ function addTask() {
   // after clearning making it ready for next todo's entry
   taskInput.value = "";
 
+  taskDiv.style.animation = " addButtonAnimation 0.8s ease 0.5s 1 normal";
+
   // dlt button listener
   dltButton.addEventListener("click", function () {
-    todoItemArea.removeChild(taskDiv);
+    taskDiv.style.animation = "dltButtonAnimation 1s ease 0.5s 1 normal";
+
+    setTimeout(() => {
+      todoItemArea.removeChild(taskDiv);
+    }, 1000);
   });
 
   // for checking the tasks
