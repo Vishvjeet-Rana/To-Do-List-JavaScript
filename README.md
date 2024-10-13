@@ -21,3 +21,6 @@ Delete Task: Use the trash icon to delete any task.
 1. HTML, CSS, JavaScript
 2. Font Awesome for Icons
 3. Google fonts for poppins font-style.
+
+# Link for the project
+https://vishvjeet-rana.github.io/To-Do-List-JavaScript/
